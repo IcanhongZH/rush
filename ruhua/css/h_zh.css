@@ -1,0 +1,266 @@
+@font-face {
+  font-family: 'aqua';
+  src: url(../font/aqua_hz.ttf);
+}
+body{
+  font-family: "Microsoft Yahei",sans-serif;
+  font-size: 14px;
+  color: #333;
+  padding-top: 50px;
+  position: relative;
+}
+a{
+  color: #333;
+}
+a:hover{
+  color: #f30;
+}
+img{
+  max-width: 100%;
+}
+/*共用元素*/
+.home-title{
+  font-size: 30px;
+  color: #333;
+  text-align: center;
+  line-height: 1.5em;
+  margin-bottom: 50px;
+}
+.home-title span{
+  font-size: 14px;
+  font-family: 'aqua',sans-serif;
+  color: #b9b9b9;
+  display: block;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  letter-spacing: 2px;
+}
+.home-title::after{
+  content: '';
+  display: block;
+  width: 320px;
+  height: 1px;
+  background: #dcdcdc;
+  margin: 0 auto;
+
+}
+/* nav导航条 */
+.navbar-default{
+  background: #fff;
+  /*padding-top: 30px;*/
+  overflow: hidden;
+}
+.navbar-brand{
+  margin-right: 100px;
+}
+.btn-danger{
+  border-radius: 30px;
+  letter-spacing: 1px;
+  margin-top: 14px;
+  padding: 0 10px;
+}
+.carousel-indicators{
+  position: absolute;
+  left: 25%;
+}
+.carousel-indicators li{
+  border-radius: 0px;
+  margin: 0;
+  width: 12px;
+  height: 12px;
+  opacity: 0.1;
+}
+.carousel-indicators .active{
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+.carousel-caption{
+  position: absolute;
+  top:0;
+  left: 0;
+  background: #000;
+  width:50%;
+  height: 100%;
+  margin:0;
+  padding: 10% 5% 0 20%;
+  background: rgba(0, 0, 0, 0.76);
+  transform: translate(-100%,0);
+}
+.slide:hover .active .carousel-caption{
+  transform: translate(0,0);
+  transition: all 0.5s ease-in-out 0s;
+}
+h3{
+  font-family: 'aqua',sans-serif;
+  font-size: 22px;
+  line-height: 1em;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #aaa;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+.carousel-caption h2{
+  font-size: 42px;
+  line-height: 1em;
+  padding: 20px 0;
+  border-top: 1px solid #777;
+  margin: 0;
+  border-bottom: 2px solid #777;
+}
+.carousel-caption p{
+  font-size: 14px;
+  line-height: 2em;
+  padding: 22px 0;
+  opacity: 0.4;
+  position: relative;
+}
+.carousel-caption p::after{
+  content: '';
+  display:block;
+  width: 45px;
+  height: 1px;
+  background: #aaa;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%,0);
+}
+.carousel-caption h4{
+  font-size:36px;
+
+}
+.carousel-caption strong{
+  font-size: 48px;
+}
+/*分享心得*/
+.share{
+  padding: 66px 0 120px;
+}
+.imgs{
+  clear: both;
+}
+.share .imgs img{
+  float: left;
+  width: 25%;
+  height: auto;
+}
+/*服务项目*/
+.service{
+  clear: both;
+  background: url(../imgs/conbox.jpg) no-repeat center;
+  background-size: cover;
+  height: 750px;
+}
+.service .home-title{
+  color: #fff;
+  margin-top: 60px;
+}
+.service .item{
+  background: #fff;
+  padding: 50px 30px;
+  text-align: center;
+  margin-top: 66px;
+}
+.service .item i{
+  font-size: 50px;
+  padding:15px;
+  margin: 0 auto;
+  color: red;
+  text-align: center;
+  width: 106px;
+  height: 106px;
+  border: 2px solid red;
+  border-radius: 50%;
+  line-height: 150px;
+}
+.service .item p{
+  padding-top: 20px;
+  color: #333;
+}
+.service .item a{
+  display: block;
+  padding: 10px 20px;
+  width: 200px;
+  margin-top: 30px;
+  border:1px solid #e1e1e1;
+  border-radius: 20px;
+}
+/*关于我们*/
+.about{
+  margin-top: 66px;
+}
+.about p{
+  text-align: center;
+  line-height: 2em;
+}
+.about a{
+  width: 148px;
+  padding: 8px 36px;
+  display: block;
+  background: red;
+  border-radius: 30px;
+  margin: 40px auto;
+  color: #fff;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+/*底部*/
+.footer{
+  background: url(../imgs/fnnbox.jpg) no-repeat center;
+  height: 780px;
+  color: #fff;
+}
+.footer .row{
+  margin-top: 115px;
+}
+.footer h3{
+  text-align: center;
+  border: none;
+}
+.footer span{
+  font-size: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  display: block;
+  line-height: 20px;
+  margin-top: -10px;
+}
+.footer p{
+  margin: 30px;
+  padding-top: 10px;
+  border-top: 2px solid #fff;
+  text-align: center;
+  line-height: 2em;
+  font-size: 16px;
+}
+.footer .lt{
+  float: left;
+}
+.footer .lt span{
+  display: block;
+  margin: 40px 0;
+  font-size: 16px
+}
+.footer .gt{
+  float: right;
+}
+.footer .gt span{
+  display: block;
+  margin: 40px 0;
+  font-size: 16px
+}
+.footer i{
+  font-size: 44px;
+}
+.footers{
+  clear: both;
+  width: 100%;
+  height: 40px;
+  color: #3a3a3a;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  background: #0c0c0c;
+  margin: 0 auto;
+}
